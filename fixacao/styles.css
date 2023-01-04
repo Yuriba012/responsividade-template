@@ -4,16 +4,22 @@
     font-family: Helvetica, sans-serif;
   }
   
+    .container{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
   header {
     background-color: #4986b8;
     color: white;
     height: 40px;
     padding: 20px;
-    width: 100%;
+    /* width: 100%; */
   }
   
   main {
-    height: 77vh;
+    /* height: 77vh; */
     max-width: 800px;
     display: flex;
     flex-direction: row;
@@ -39,10 +45,21 @@
   }
   
   footer {
-    position: absolute;
     bottom: 0;
     background-color: black;
     color: white;
     padding: 20px;
-    width: 100%;
+    /* width: 100%; */
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 800px) {
+    header{
+      position: fixed;
+      width: 100vw;
+      top: 0;
+    }
+    main{
+      margin-top: 90px;
+      flex-direction: column;
+    }
   }
