@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width : 1200px) {
+    .estilo{
+        display: grid;
+        grid-template-columns: 50vw repeat(2, 1fr);
+        grid-template-rows: repeat(2, 30vh);
+        gap: 10px;
+        font-size: 3em;
+    }
+    .estilo > section{
+        border: 1px solid black;
+        background-color: rgb(195, 195, 195);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width : 320px) and (max-width : 1199px) {
+    .estilo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 2em;
+        color: darkgrey;
+        color: white;
+    }
+    .estilo > section{
+        border: 1px solid black;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
